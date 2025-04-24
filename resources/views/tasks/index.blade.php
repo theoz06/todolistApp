@@ -77,7 +77,7 @@
                     @foreach ($tasks as $task)
                         <li class="flex items-center justify-between p-3 mb-2 bg-gray-50 hover:bg-gray-100 rounded-xl task-item transition">
                             <div class="flex items-center gap-3 flex-1">
-                                <form method="POST" action="/task{{ $task->id }}">
+                                <form method="POST" action="/task/{{ $task->id }}">
                                     @csrf @method('PATCH')
                                     <button type="submit" class="w-6 h-6 rounded-full border-2 {{ $task->is_done ? 'bg-green-500 border-green-500' : 'border-gray-300' }} flex items-center justify-center hover:border-green-500 transition">
                                         <i class="fas fa-check text-xs {{ $task->is_done ? 'text-white' : 'text-transparent' }}"></i>
@@ -85,7 +85,7 @@
                                 </form>
                                 <span class="{{ $task->is_done ? 'completed' : '' }}">{{ $task->title }}</span>
                             </div>
-                            <form method="POST" action="/task{{ $task->id }}">
+                            <form method="POST" action="/task/{{ $task->id }}">
                                 @csrf @method('DELETE')
                                 <button type="submit" class="text-gray-400 hover:text-red-500 hover:bg-red-50 p-2 rounded-full transition">
                                     <i class="fas fa-trash-alt text-sm"></i>
