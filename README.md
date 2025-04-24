@@ -7,7 +7,7 @@ A modern, interactive to-do list web application with a clean and attractive use
 
 This application provides a sleek and intuitive interface for managing daily tasks. Built with modern web technologies, it allows users to add, mark as complete, and delete tasks with a visually appealing experience.
 
-![To-Do List App Screenshot](/api/placeholder/600/400)
+![To-Do List App Screenshot](/public/image.png)
 
 ## Features
 
