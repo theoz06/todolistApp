@@ -51,8 +51,8 @@ This application provides a sleek and intuitive interface for managing daily tas
 This application is designed to work with a backend system that processes form submissions:
 
 - **Add Task**: Form submits to `/task` endpoint with POST method
-- **Mark as Complete**: Form submits to `/task{id}` endpoint with PATCH method
-- **Delete Task**: Form submits to `/task{id}` endpoint with DELETE method
+- **Mark as Complete**: Form submits to `/task/{id}` endpoint with PATCH method
+- **Delete Task**: Form submits to `/task/{id}` endpoint with DELETE method
 
 The backend should handle these requests appropriately and return updated data for the view.
 
